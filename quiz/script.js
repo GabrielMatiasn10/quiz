@@ -40,3 +40,9 @@ const questions = [
       answer: "Londres",
     },
   ];
+
+const questionElement = document.querySelector("question");
+const choicesElement = document.querySelector("choices");
+const nextButton = document.querySelector("next");
+const scoreElement = document.querySelector("score");
+const wrongElement = document.querySelector("wrong");
