@@ -1,28 +1,28 @@
 const questions = [
   {
-    question: "Qual é a capital do Brasil?",
-    choices: ["Brasília", "Rio de Janeiro", "São Paulo", "Salvador"],
-    answer: "Brasília",
+    question: "o que é HTML?",
+    choices: [ "estilo de pagina"," Linguagem de Marcação de Hipertexto", "linguagem de programação de desenvolvimento web" ,"Nao sei",],
+    answer: "Linguagem de Marcação de Hipertexto",
   },
   {
-    question: "Qual é a capital da Argentina?",
-    choices: ["Buenos Aires", "Brasília", "Lisboa", "Paris"],
-    answer: "Buenos Aires",
+    question: "O que é CSS?",
+    choices: ["  linguagem de marcação de estilo", " linguagem de programação de desenvolvimento web", "uma funcion mobile"  ,"Nao sei",],
+    answer: "linguagem de marcação de estilo",
   },
   {
-    question: "Qual é a capital da França?",
-    choices: ["Roma", "Madri", "Paris", "Londres"],
-    answer: "Paris",
+    question: " O que é JavaScript?",
+    choices: [, "DOM", "Linguagem de Marcação de Hipertexto", "linguagem de programação de desenvolvimento web" ,"",],
+    answer: "linguagem de programação de desenvolvimento web",
   },
   {
-    question: "Qual é a capital da Espanha?",
-    choices: ["Lisboa", "Madri", "Barcelona", "Valência"],
-    answer: "Madri",
+    question: " O que é DOM?",
+    choices: ["Estruturada e hierárquica de um documento HTML", "linguagem de programação de desenvolvimento web", "Uma funcion" ,"Nao sei",],
+    answer: "Estruturada e hierárquica de um documento HTML",
   },
   {
-    question: "Qual é a capital da Itália?",
-    choices: ["Veneza", "Milão", "Roma", "Nápoles"],
-    answer: "Roma",
+    question: "Qual é String?",
+    choices: [" 1243", " '1234'", "Uma função", "Nao sei",],
+    answer: "'1234'",
   },
   {
     question: "Qual é a capital do Canadá?",
@@ -60,11 +60,11 @@ function loadQuestion() {
   for (let i = 0; i < choiceElements.length; i++) {
     choiceElements[i].innerText = choices[i];
   }
-  answerChosen = false; // reset flag when loading new question
+  answerChosen = false; 
 }
 
 function checkAnswer(e) {
-  if (answerChosen) return; // prevent multiple answers
+  if (answerChosen) return;
   answerChosen = true;
 
   if (e.target.innerText === questions[currentQuestion].answer) {
