@@ -15,7 +15,9 @@ body {
 
   li {
     margin-bottom: 10px;
+    margin-right: 10%;
   }
+  
   p {
     color: #fff;
   }
@@ -34,7 +36,7 @@ body {
     padding: 10px;
     cursor: pointer;
   }
-  
+
   .choice:hover {
     background-color:   #fc7303;
   }
